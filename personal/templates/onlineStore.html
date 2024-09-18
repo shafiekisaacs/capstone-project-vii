@@ -1,0 +1,230 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css"
+      rel="stylesheet"
+    />
+    <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"
+    ></script>
+    <link rel="stylesheet" href="{% static 'images/guitar_shop.css' %}">
+    <meta charset="UTF-8">
+    <title>Guitars R Us</title>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <!-- The main title bar for the website -->
+        <div class="col-md-12 text-center">
+            <div class="p-3 mb-2 bg-primary text-white">
+                <h1>Guitars 'R' Us</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- Separate the site into 4 rows, each separated into sets of 4 columns -->
+    <!-- Class mt-5 adds some spacing at the top of each row -->
+    <div class="row mt-5">
+        <!-- Stratocaster -->
+        <div class="col-md-4">
+            <!-- Each product image has an overlay to show the name and price -->
+            <!-- I began this using code from https://mdbootstrap.com/docs/standard/extended/overlay/ -->
+            <div class="bg-image hover-overlay rounded">
+                <img class="img-fluid" src="{% static 'images/stratocaster.jpg' %}" alt=" Fender Stratocaster">
+                <a href="#!">
+                    <div class="mask text-light d-flex justify-content-center flex-column text-center"
+                         style="background-color: rgba(0, 0, 0, 0.5)">
+                        <h4>Fender Stratocaster</h4>
+                        <p class="m-0">R15299.99</p>
+                    </div>
+                </a>
+            </div>
+            <button class="btn btn-light float-end">Buy Now</button>
+        </div>
+        <!-- Telecaster -->
+        <div class="col-md-4">
+            <div class="bg-image hover-overlay rounded">
+                <img src="{% static 'images/telecaster.jpg' %}" class="img-fluid" alt="Telecaster">
+                <a href="#!">
+                    <div class="mask text-light d-flex justify-content-center flex-column text-center"
+                         style="background-color: rgba(0, 0, 0, 0.5)">
+                        <h4>Fender Telecaster</h4>
+                        <p class="m-0">R12249.99</p>
+                    </div>
+                </a>
+            </div>
+            <button class="btn btn-light float-end">Buy Now</button>
+        </div>
+        <!-- Telecaster start pack -->
+        <div class="col-md-4">
+            <div class="bg-image hover-overlay rounded">
+                <img src="{% static 'images/stratocaster_starter.jpg' %}" class="img-fluid" alt="Stratocaster Starter Set">
+                <a href="#!">
+                    <div class="mask text-light d-flex justify-content-center flex-column text-center"
+                         style="background-color: rgba(0, 0, 0, 0.5)">
+                        <h4>Squier Stratocaster Starter Pack</h4>
+                        <p class="m-0">R5899.99</p>
+                    </div>
+                </a>
+            </div>
+            <button class="btn btn-light float-end">Buy Now</button>
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        <!-- Gibson Les Paul -->
+        <div class="col-md-4">
+            <div class="bg-image hover-overlay rounded">
+                <img src="{% static 'images/les paul.jpg' %}" class="img-fluid" alt="Gibson Les Paul">
+                <a href="#!">
+                    <div class="mask text-light d-flex justify-content-center flex-column text-center"
+                         style="background-color: rgba(0, 0, 0, 0.5)">
+                        <h4>Gibson Les Paul</h4>
+                        <p class="m-0">£25899.99</p>
+                    </div>
+                </a>
+            </div>
+            <button class="btn btn-light float-end">Buy Now</button>
+        </div>
+        <!-- Gibson SG -->
+        <div class="col-md-4">
+            <div class="bg-image hover-overlay rounded">
+                <img src="{% static 'images/sg.jpg' %}" class="img-fluid hover-zoom" alt="Gibson SG">
+                <a href="#!">
+                    <div class="mask text-light d-flex justify-content-center flex-column text-center"
+                         style="background-color: rgba(0, 0, 0, 0.5)">
+                        <h4>Gibson SG</h4>
+                        <p class="m-0">R25899.99</p>
+                    </div>
+                </a>
+            </div>
+            <button class="btn btn-light float-end">Buy Now</button>
+        </div>
+        <!-- Gretsch Electromatic -->
+        <div class="col-md-4">
+            <div class="bg-image hover-overlay rounded">
+                <img src="{% static 'images/Electromatic.jpg' %}" class="img-fluid" alt="Gretsch Electromatic">
+                <a href="#!">
+                    <div class="mask text-light d-flex justify-content-center flex-column text-center"
+                         style="background-color: rgba(0, 0, 0, 0.5)">
+                        <h4>Gretsch Electromatic</h4>
+                        <p class="m-0">R14799.99</p>
+                    </div>
+                </a>
+            </div>
+            <button class="btn btn-light float-end">Buy Now</button>
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        <!-- Yamaha NTX3 -->
+        <div class="col-md-4">
+            <div class="bg-image hover-overlay rounded">
+                <img src="{% static 'images/yamaha_ntx3.jpg' %}" class="img-fluid" alt="Yamaha NTX3">
+                <a href="#!">
+                    <div class="mask text-light d-flex justify-content-center flex-column text-center"
+                         style="background-color: rgba(0, 0, 0, 0.5)">
+                        <h4>Yamaha NTX3</h4>
+                        <p class="m-0">R8249.99</p>
+                    </div>
+                </a>
+            </div>
+            <button class="btn btn-light float-end">Buy Now</button>
+        </div>
+        <!-- Yamaha Pacifica -->
+        <div class="col-md-4">
+            <div class="bg-image hover-overlay rounded">
+                <img src="{% static 'images/pacifica.jpg' %}" class="img-fluid" alt="Yamaha Pacifica">
+                <a href="#!">
+                    <div class="mask text-light d-flex justify-content-center flex-column text-center"
+                         style="background-color: rgba(0, 0, 0, 0.5)">
+                        <h4>Yamaha Pacifica</h4>
+                        <p class="m-0">R4699.99</p>
+                    </div>
+                </a>
+            </div>
+            <button class="btn btn-light float-end">Buy Now</button>
+        </div>
+        <!-- Yamaha Pacifica Starter Pack -->
+        <div class="col-md-4">
+            <div class="bg-image hover-overlay rounded">
+                <img src="{% static 'images/pacifica_starter.jpg' %}" class="img-fluid" alt="Pacifica Starter Set">
+                <a href="#!">
+                    <div class="mask text-light d-flex justify-content-center flex-column text-center"
+                         style="background-color: rgba(0, 0, 0, 0.5)">
+                        <h4>Yamaha Pacifica Starter Pack</h4>
+                        <p class="m-0">R5899.99</p>
+                    </div>
+                </a>
+            </div>
+            <button class="btn btn-light float-end">Buy Now</button>
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        <!-- Martin D28 -->
+        <div class="col-md-4">
+            <div class="bg-image hover-overlay rounded">
+                <img src="{% static 'images/martin_d28.jpg' %}" class="img-fluid" alt="Martin D28">
+                <a href="#!">
+                    <div class="mask text-light d-flex justify-content-center flex-column text-center"
+                         style="background-color: rgba(0, 0, 0, 0.5)">
+                        <h4>Martin D28</h4>
+                        <p class="m-0">R2499.99</p>
+                    </div>
+                </a>
+            </div>
+            <button class="btn btn-light float-end">Buy Now</button>
+        </div>
+    </div>
+
+    <div class="row mt-5 justify-content-center">
+        <!-- Logo -->
+        <div class="col-md-2">
+            <img src="{% static 'images/Guitars_R_Us-1.png' %}" class="img-fluid" alt="Logo">
+        </div>
+        <!-- Mailing List form -->
+        <div class="col-md-8">
+            <div class="p-3 bg-primary text-white">
+                <footer>
+                    <form>
+                        <div class="row text-center">
+                            <h4>Join our mailing list to receive updates and offers</h4>
+                        </div>
+                        <div class="row form-group">
+                            <label for="inputEmail" class="col-md-2 col-form-label">Email Address:</label>
+                                <div class="col-md-10">
+                                    <input type="email" class="form-control" id="inputEmail" required>
+                                </div>
+                        </div>
+                        <div class="row justify-content-start mt-2">
+                            <div class="col-md-2">
+                                <button type="submit" class="btn btn-light">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </footer>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
