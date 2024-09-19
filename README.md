@@ -29,13 +29,12 @@ To run this project on your local system, follow these steps:
    ```bash
    git clone https://github.com/shafiekisaacs/capstone-project-vii.git
 
-2. Install project dependencies:
-   - pip install -r requirements.txt
-     
-2. Installing Django and creating virtual environment:
+1. Installing Django and creating virtual environment:
    - mkvirtualenv my_django
    - workon my_django
-   -  pip install django
+     
+2.  Install project dependencies:
+   - pip install -r requirements.txt
   
 3. Navigate to the project directory:
    - cd capstone-project-vii/mySite
@@ -55,6 +54,18 @@ To run this project on your local system, follow these steps:
    - Visit http://127.0.0.1:8000/ to access the landing page
    - Click "Explore" to go to the login page, where you can sign up or log in if you have credentials.
    - Once logged in, you can navigate through the website's various pages.
+
+## Docker
+   - In order to run using the docker image, use the following commands
+   1. To download the image from docker hub:
+      - docker pull shafiekisaacs/capstone-project-vii:latest
+
+   2. To run the image
+      - docker run -it -p 8000:8000 shafiekisaacs/capstone-project-vii:latest python manage.py runserver 0.0.0.0:8000
+   3. To access the Landing Page:
+      - Visit http://127.0.0.1:8000/ or http://localhost:8000/
+      - Click "Explore" to go to the login page, where you can sign up or log in if you have credentials.
+      - Once logged in, you can navigate through the website's various pages.
 
 ## Project Author
 Shafiek Isaacs
