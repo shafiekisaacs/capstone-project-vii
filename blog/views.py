@@ -1,3 +1,5 @@
+# This is the views file of the website with docstrings added
+
 from django.shortcuts import render
 from django.http import HttpResponse
 
